@@ -1,0 +1,202 @@
+{
+    "categories": [
+        {
+            "code": "FRUITS",
+            "label": "fruits"
+        },
+        {
+            "code": "VEGETABLES",
+            "label": "vegetables"
+        },
+        {
+            "code": "MEAT",
+            "label": "meat"
+        },
+        {
+            "code": "FISH",
+            "label": "fish"
+        },
+        {
+            "code": "HOUSEHOLD_CLEANING",
+            "label": "household cleaning"
+        }
+    ],
+    "products": [
+        {
+            "name": "apple",
+            "price": 1.00,
+            "unit": "Kg",
+            "discountedPrice": 0.85,
+            "image": "https://via.placeholder.com/150.png?text=apple",
+            "categoryCode": "FRUITS"
+        },
+        {
+            "name": "banana",
+            "price": 1.50,
+            "unit": "Kg",
+            "discountedPrice": "null",
+            "image": "https://via.placeholder.com/150.png?text=banana",
+            "categoryCode": "FRUITS"
+        },
+        {
+            "name": "strawberries",
+            "price": 3.50,
+            "unit": "Kg",
+            "discountedPrice": 3.20,
+            "image": "https://via.placeholder.com/150.png?text=strawberries",
+            "categoryCode": "FRUITS"
+        },
+        {
+            "name": "orange",
+            "price": 1.80,
+            "unit": "Kg",
+            "discountedPrice": 1.50,
+            "image": "https://via.placeholder.com/150.png?text=orange",
+            "categoryCode": "FRUITS"
+        },
+        {
+            "name": "peach",
+            "price": 3.00,
+            "unit": "Kg",
+            "discountedPrice": "null",
+            "image": "https://via.placeholder.com/150.png?text=peach",
+            "categoryCode": "FRUITS"
+        },
+        {
+            "name": "spinach",
+            "price": 2.00,
+            "unit": "Kg",
+            "discountedPrice": "1.70",
+            "image": "https://via.placeholder.com/150.png?text=spinach",
+            "categoryCode": "VEGETABLES"
+        },
+        {
+            "name": "potato",
+            "price": 1.00,
+            "unit": "Kg",
+            "discountedPrice": "0.90",
+            "image": "https://via.placeholder.com/150.png?text=potato",
+            "categoryCode": "VEGETABLES"
+        },
+        {
+            "name": "tomato",
+            "price": 4.00,
+            "unit": "Kg",
+            "discountedPrice": "null",
+            "image": "https://via.placeholder.com/150.png?text=tomato",
+            "categoryCode": "VEGETABLES"
+        },
+        {
+            "name": "lettuce",
+            "price": 1.00,
+            "unit": "packet",
+            "discountedPrice": "null",
+            "image": "https://via.placeholder.com/150.png?text=lettuce",
+            "categoryCode": "VEGETABLES"
+        },
+        {
+            "name": "mushroom",
+            "price": 6.00,
+            "unit": "Kg",
+            "discountedPrice": "5.50",
+            "image": "https://via.placeholder.com/150.png?text=mushroom",
+            "categoryCode": "VEGETABLES"
+        },
+        {
+            "name": "chicken",
+            "price": 9.00,
+            "unit": "Kg",
+            "discountedPrice": "8.30",
+            "image": "https://via.placeholder.com/150.png?text=chicken",
+            "categoryCode": "MEAT"
+        },
+        {
+            "name": "beef",
+            "price": 12.00,
+            "unit": "Kg",
+            "discountedPrice": "11.00",
+            "image": "https://via.placeholder.com/150.png?text=beef",
+            "categoryCode": "MEAT"
+        },
+        {
+            "name": "lamb",
+            "price": 15.00,
+            "unit": "Kg",
+            "discountedPrice": "null",
+            "image": "https://via.placeholder.com/150.png?text=lamb",
+            "categoryCode": "MEAT"
+        },
+        {
+            "name": "turkey",
+            "price": 14.00,
+            "unit": "Kg",
+            "discountedPrice": "12.50",
+            "image": "https://via.placeholder.com/150.png?text=turkey",
+            "categoryCode": "MEAT"
+        },
+        {
+            "name": "salmon",
+            "price": 19.00,
+            "unit": "Kg",
+            "discountedPrice": "17.50",
+            "image": "https://via.placeholder.com/150.png?text=salmon",
+            "categoryCode": "FISH"
+        },
+        {
+            "name": " sea bream",
+            "price": 3.00,
+            "unit": "each",
+            "discountedPrice": "2 for 5.00",
+            "image": "https://via.placeholder.com/150.png?text=seabream",
+            "categoryCode": "FISH"
+        },
+        {
+            "name": "mussels",
+            "price": 20.00,
+            "unit": "Kg",
+            "discountedPrice": "null",
+            "image": "https://via.placeholder.com/150.png?text=mussels",
+            "categoryCode": "FISH"
+        },
+        {
+            "name": "prawns",
+            "price": 35.00,
+            "unit": "Kg",
+            "discountedPrice": "null",
+            "image": "https://via.placeholder.com/150.png?text=prawns",
+            "categoryCode": "FISH"
+        },
+        {
+            "name": "laundry detergent",
+            "price": 3.00,
+            "unit": "L",
+            "discountedPrice": "2.30",
+            "image": "https://via.placeholder.com/150.png?text=laundrydetergent",
+            "categoryCode": "HOUSEHOLD_CLEANING"
+        },
+        {
+            "name": "bathroom cleaner",
+            "price": 2.00,
+            "unit": "L",
+            "discountedPrice": "1.80",
+            "image": "https://via.placeholder.com/150.png?text=bathroomcleaner",
+            "categoryCode": "HOUSEHOLD_CLEANING"
+        },
+        {
+            "name": "kitchen degreaser",
+            "price": 4.00,
+            "unit": "L",
+            "discountedPrice": "3.70",
+            "image": "https://via.placeholder.com/150.png?text=kitchendegreaser",
+            "categoryCode": "HOUSEHOLD_CLEANING"
+        },
+        {
+            "name": "wipes",
+            "price": 1.50,
+            "unit": "pack",
+            "discountedPrice": " 2 for 1.00",
+            "image": "https://via.placeholder.com/150.png?text=wipes",
+            "categoryCode": "HOUSEHOLD_CLEANING"
+        }
+    ]
+}
