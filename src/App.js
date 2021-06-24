@@ -2,17 +2,16 @@ import { Route, Switch } from 'react-router-dom';
 
 import { ContextWrapper } from './Context';
 import { Category } from './Components/Category/Category';
-import { Home } from './Components/Home/Home';
-import { AllProducts} from './Components/AllProducts/AllProducts';
+import { Basket } from './Components/Basket/Basket';
 
 function App () {
 
   return <ContextWrapper>
     <h1>Shopping list</h1>
+    <Basket />
     <Switch>
       <Route exact path="/">
-        <Home />
-        <AllProducts />
+        <Category />
       </Route>
       <Route path="/category/:categoryCode">
         <Category />

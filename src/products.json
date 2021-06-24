@@ -23,6 +23,7 @@
     ],
     "products": [
         {
+            "id": 0,
             "name": "apple",
             "price": 1.00,
             "unit": "Kg",
@@ -31,14 +32,15 @@
             "categoryCode": "FRUITS"
         },
         {
+            "id": 1,
             "name": "banana",
             "price": 1.50,
             "unit": "Kg",
-            "discountedPrice": "null",
             "image": "https://via.placeholder.com/150.png?text=banana",
             "categoryCode": "FRUITS"
         },
         {
+            "id": 2,
             "name": "strawberries",
             "price": 3.50,
             "unit": "Kg",
@@ -47,6 +49,7 @@
             "categoryCode": "FRUITS"
         },
         {
+            "id": 3,
             "name": "orange",
             "price": 1.80,
             "unit": "Kg",
@@ -55,14 +58,15 @@
             "categoryCode": "FRUITS"
         },
         {
+            "id": 4,
             "name": "peach",
             "price": 3.00,
             "unit": "Kg",
-            "discountedPrice": "null",
             "image": "https://via.placeholder.com/150.png?text=peach",
             "categoryCode": "FRUITS"
         },
         {
+            "id": 5,
             "name": "spinach",
             "price": 2.00,
             "unit": "Kg",
@@ -71,6 +75,7 @@
             "categoryCode": "VEGETABLES"
         },
         {
+            "id": 6,
             "name": "potato",
             "price": 1.00,
             "unit": "Kg",
@@ -79,22 +84,23 @@
             "categoryCode": "VEGETABLES"
         },
         {
+            "id": 7,
             "name": "tomato",
             "price": 4.00,
             "unit": "Kg",
-            "discountedPrice": "null",
             "image": "https://via.placeholder.com/150.png?text=tomato",
             "categoryCode": "VEGETABLES"
         },
         {
+            "id": 8,
             "name": "lettuce",
             "price": 1.00,
             "unit": "packet",
-            "discountedPrice": "null",
             "image": "https://via.placeholder.com/150.png?text=lettuce",
             "categoryCode": "VEGETABLES"
         },
         {
+            "id": 9,
             "name": "mushroom",
             "price": 6.00,
             "unit": "Kg",
@@ -103,6 +109,7 @@
             "categoryCode": "VEGETABLES"
         },
         {
+            "id": 10,
             "name": "chicken",
             "price": 9.00,
             "unit": "Kg",
@@ -111,6 +118,7 @@
             "categoryCode": "MEAT"
         },
         {
+            "id": 11,
             "name": "beef",
             "price": 12.00,
             "unit": "Kg",
@@ -119,14 +127,15 @@
             "categoryCode": "MEAT"
         },
         {
+            "id": 12,
             "name": "lamb",
             "price": 15.00,
             "unit": "Kg",
-            "discountedPrice": "null",
             "image": "https://via.placeholder.com/150.png?text=lamb",
             "categoryCode": "MEAT"
         },
         {
+            "id": 13,
             "name": "turkey",
             "price": 14.00,
             "unit": "Kg",
@@ -135,6 +144,7 @@
             "categoryCode": "MEAT"
         },
         {
+            "id": 14,
             "name": "salmon",
             "price": 19.00,
             "unit": "Kg",
@@ -143,30 +153,32 @@
             "categoryCode": "FISH"
         },
         {
+            "id": 15,
             "name": " sea bream",
             "price": 3.00,
             "unit": "each",
-            "discountedPrice": "2 for 5.00",
+            "discountedPrice": "2.50",
             "image": "https://via.placeholder.com/150.png?text=seabream",
             "categoryCode": "FISH"
         },
         {
+            "id": 16,
             "name": "mussels",
             "price": 20.00,
             "unit": "Kg",
-            "discountedPrice": "null",
             "image": "https://via.placeholder.com/150.png?text=mussels",
             "categoryCode": "FISH"
         },
         {
+            "id": 17,
             "name": "prawns",
             "price": 35.00,
             "unit": "Kg",
-            "discountedPrice": "null",
             "image": "https://via.placeholder.com/150.png?text=prawns",
             "categoryCode": "FISH"
         },
         {
+            "id": 18,
             "name": "laundry detergent",
             "price": 3.00,
             "unit": "L",
@@ -175,6 +187,7 @@
             "categoryCode": "HOUSEHOLD_CLEANING"
         },
         {
+            "id": 19,
             "name": "bathroom cleaner",
             "price": 2.00,
             "unit": "L",
@@ -183,6 +196,7 @@
             "categoryCode": "HOUSEHOLD_CLEANING"
         },
         {
+            "id": 20,
             "name": "kitchen degreaser",
             "price": 4.00,
             "unit": "L",
@@ -191,10 +205,11 @@
             "categoryCode": "HOUSEHOLD_CLEANING"
         },
         {
+            "id": 21,
             "name": "wipes",
             "price": 1.50,
             "unit": "pack",
-            "discountedPrice": " 2 for 1.00",
+            "discountedPrice": "1.20",
             "image": "https://via.placeholder.com/150.png?text=wipes",
             "categoryCode": "HOUSEHOLD_CLEANING"
         }

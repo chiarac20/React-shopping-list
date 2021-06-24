@@ -1,25 +1,32 @@
 import { useContext } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import { CategoryList } from '../CategoryList/CategoryList';
 import { Context } from '../../Context';
+import { Product } from '../Product/Product';
 
 export function Category () {
-    const info=useContext(Context);
-    const params=useParams();
-    const categoryProducts=info.products.filter(product => product.categoryCode===params.categoryCode);
+    const {products, categories, increaseQuantity, decreaseQuantity, zeroQuantity}=useContext(Context);
+    const {categoryCode}=useParams();
+    const categoryProducts=products.filter(product => !categoryCode || product.categoryCode===categoryCode);
 
     return <div>
-        <div>
-            <Link to="/">All products</Link>
-        </div>
         <CategoryList />
-        <h2>{info.categories.filter(category => category.code===params.categoryCode)[0].label.toUpperCase()}</h2>
-        {categoryProducts.map((product, key) => <section key={key}>
-            <div>{product.name}</div>
-            <div> £ <span> {product.price} </span> / <span>{product.unit} </span> </div>
-            {product.discountedPrice!=='null' && <div> discount: £ <span>{product.discountedPrice} </span> </div>}
-            <img src={product.image}></img>
-        </section>)}
+        {categoryCode && <h2>{categories.find(category => category.code===categoryCode).label.toUpperCase()}</h2>}
+        {categoryProducts.map((product) => <section key={product.id}>
+            <Product 
+                    name={product.name} 
+                    price={product.price}
+                    unit={product.unit}
+                    discountedPrice={product.discountedPrice}
+                    image={product.image}
+                    quantity={product.quantity}
+                    totalPrice={product.totalPrice}
+                    increaseProductQuantity={() => increaseQuantity(product.id)}
+                    decreaseProductQuantity={() => decreaseQuantity(product.id)}
+                    zeroQuantity={() => zeroQuantity(product.id)}
+                />
+            </section>)
+        }
     </div>
 } 
