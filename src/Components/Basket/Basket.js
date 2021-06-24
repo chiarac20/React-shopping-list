@@ -6,6 +6,7 @@ import { QuantityCta } from '../QuantityCta/QuantityCta';
 export function Basket () {
     const {products, increaseQuantity, decreaseQuantity, zeroQuantity} = useContext(Context);
     const basketProducts=products.filter(product => product.quantity!==0);
+    const total=(products.reduce((acc, product) => acc + product.totalPrice, 0)).toFixed(2);
    
     return <ul>
         {basketProducts && basketProducts.map(product => <li key={product.id}>
@@ -19,5 +20,6 @@ export function Basket () {
             /> 
             <span> price: £{product.totalPrice.toFixed(2)} </span>
         </li>)}
+        <div>TOTAL: £{total} </div>
     </ul> 
 }
