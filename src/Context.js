@@ -39,7 +39,8 @@ export function ContextWrapper({children}) {
         const updatedQuantities=products.map(product => product.id!==id ? product
             : {
                 ...product,
-                quantity: 0
+                quantity: 0,
+                totalPrice: 0
             })
 
         setProducts(updatedQuantities)
