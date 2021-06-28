@@ -1,0 +1,14 @@
+@import './Constants.scss';
+
+body {
+    color: $blue;
+    background-color: rgb(232, 232, 253);
+}
+
+h1 {
+    text-align: center;
+}
+
+a:visited {
+    color: $blue;
+}

@@ -4,6 +4,8 @@ import { ContextWrapper } from './Context';
 import { Category } from './Components/Category/Category';
 import { Basket } from './Components/Basket/Basket';
 
+import './App.scss';
+
 function App () {
 
   return <ContextWrapper>

@@ -1,0 +1,15 @@
+@import '../../Constants.scss';
+
+.CategoryList {
+    border: 1px rgb(250, 100, 200) solid;
+    padding: 1vw;
+    background-color: $pink;
+    font-size: 4vw;
+    &__category {
+        padding: $standard-padding;
+        font-size: 3vw;
+    }
+    &__allProductsLink {
+        padding: $standard-padding;   
+    }
+}

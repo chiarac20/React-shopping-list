@@ -5,16 +5,17 @@ import { CategoryList } from '../CategoryList/CategoryList';
 import { Context } from '../../Context';
 import { Product } from '../Product/Product';
 
+import './Category.scss';
+
 export function Category () {
     const {products, categories, increaseQuantity, decreaseQuantity, zeroQuantity}=useContext(Context);
     const {categoryCode}=useParams();
     const categoryProducts=products.filter(product => !categoryCode || product.categoryCode===categoryCode);
 
-    return <div>
+    return <div className="Category">
         <CategoryList />
-        {categoryCode && <h2>{categories.find(category => category.code===categoryCode).label.toUpperCase()}</h2>}
-        {categoryProducts.map((product) => <section key={product.id}>
-            <Product 
+        {categoryCode && <h2 className="Category__name">{categories.find(category => category.code===categoryCode).label.toUpperCase()}</h2>}
+        {categoryProducts.map((product) => <Product 
                     name={product.name} 
                     price={product.price}
                     unit={product.unit}
@@ -25,8 +26,8 @@ export function Category () {
                     increaseProductQuantity={() => increaseQuantity(product.id)}
                     decreaseProductQuantity={() => decreaseQuantity(product.id)}
                     zeroQuantity={() => zeroQuantity(product.id)}
-                />
-            </section>)
+                    key={product.id}
+                />)
         }
     </div>
 } 

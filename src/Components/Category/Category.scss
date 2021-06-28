@@ -1,0 +1,10 @@
+@import '../../Constants.scss';
+
+.Category {
+    background-color: rgb(200, 150, 150);
+    border: 1px rgb(200, 50, 50) solid;
+    &__name {
+        font-size: 4vw;
+        padding: $standard-padding;
+    }
+}
