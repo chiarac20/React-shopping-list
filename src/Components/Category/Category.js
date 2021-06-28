@@ -15,19 +15,21 @@ export function Category () {
     return <div className="Category">
         <CategoryList />
         {categoryCode && <h2 className="Category__name">{categories.find(category => category.code===categoryCode).label.toUpperCase()}</h2>}
-        {categoryProducts.map((product) => <Product 
-                    name={product.name} 
-                    price={product.price}
-                    unit={product.unit}
-                    discountedPrice={product.discountedPrice}
-                    image={product.image}
-                    quantity={product.quantity}
-                    totalPrice={product.totalPrice}
-                    increaseProductQuantity={() => increaseQuantity(product.id)}
-                    decreaseProductQuantity={() => decreaseQuantity(product.id)}
-                    zeroQuantity={() => zeroQuantity(product.id)}
-                    key={product.id}
-                />)
-        }
+        <section className="Category__product-list">
+            {categoryProducts.map((product) => <Product 
+                        name={product.name} 
+                        price={product.price}
+                        unit={product.unit}
+                        discountedPrice={product.discountedPrice}
+                        image={product.image}
+                        quantity={product.quantity}
+                        totalPrice={product.totalPrice}
+                        increaseProductQuantity={() => increaseQuantity(product.id)}
+                        decreaseProductQuantity={() => decreaseQuantity(product.id)}
+                        zeroQuantity={() => zeroQuantity(product.id)}
+                        key={product.id}
+                    />)
+            }
+        </section>
     </div>
 } 

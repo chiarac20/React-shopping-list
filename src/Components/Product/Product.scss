@@ -4,16 +4,23 @@
     background-color: $pink;
     display:inline-block;
     width: 10vw;
-    min-width: 150px;
+    min-width: 200px;
+    min-height: 450px;
     margin: 1vw;
     &__name {
         font-size: 3.5vw;
         margin-left: 1vw;
     }
-    &__price{
+    &__price {
         padding: $standard-padding;
     }
-    &__discountedPrice{
+    &__discountedPrice {
+        padding: $standard-padding;
+    }
+    &__quantity {
+        padding: $standard-padding;
+    }
+    &__totalPrice {
         padding: $standard-padding;
     }
 }
